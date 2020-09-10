@@ -8,10 +8,11 @@ function createWindow() {
     width: 800,
     height: 600,
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: false
     }
   });
-  window.loadFile('./index.html');
+  // window.loadFile('./index.html');
+  window.loadURL("http://localhost:1234");
   if (is.development){
     window.webContents.openDevTools();
   }
